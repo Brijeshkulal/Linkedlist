@@ -12,8 +12,8 @@ public class ListMain {
 		System.out.println("updated list: ");
 		linkedList.display();
 		
-		linkedList.pop();
-		System.out.println("After deleting the first node");
+		linkedList.popLast();
+		System.out.println("After deleting the Last node");
 		linkedList.display();
 		}
 }

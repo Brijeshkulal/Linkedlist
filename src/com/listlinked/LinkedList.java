@@ -22,11 +22,20 @@ public class LinkedList {
 		head.next = node;
 		node.next = temp;
 		}
-	
-	public void pop() {
+	 
+	 /* Delete the first node
+		public void pop() {
 		Node toDelete = head;
 		head = head.next;
 		toDelete = null;
+	}*/
+	
+	public void popLast() {
+		Node temp = head;
+		while(temp.next.next != null){
+			temp = temp.next;
+		}
+        temp.next = null;
 	}
 	
 	public void display() {
