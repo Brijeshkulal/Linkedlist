@@ -23,6 +23,12 @@ public class LinkedList {
 		node.next = temp;
 		}
 	
+	public void pop() {
+		Node toDelete = head;
+		head = head.next;
+		toDelete = null;
+	}
+	
 	public void display() {
 		Node temp = head;
 		while(temp != null) {
