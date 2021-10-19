@@ -11,9 +11,9 @@ public class LinkedList {
 			tail = node;
 			}
 		else {
-			Node temp = head;
-			head= node;
-            node.next = temp;
+			tail.next = node;
+			tail = node;
+			}
 		}
 	}
 	
