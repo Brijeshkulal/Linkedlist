@@ -13,9 +13,15 @@ public class LinkedList {
 		else {
 			tail.next = node;
 			tail = node;
-			}
 		}
 	}
+	
+	public void insertInbtwn(int data) {
+		Node node = new Node(data);
+		Node temp = head.next;
+		head.next = node;
+		node.next = temp;
+		}
 	
 	public void display() {
 		Node temp = head;
