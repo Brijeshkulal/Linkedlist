@@ -4,7 +4,7 @@ public class LinkedList {
 	Node head;
 	Node tail;
 	
-	public Node insertAtStart(int data) {
+	public void insertAtStart(int data) {
 		Node node = new Node(data);
 		if(head == null) {
 			head = node;
@@ -15,7 +15,6 @@ public class LinkedList {
 			head= node;
 			node.next = temp;
 		}
-		return node;
 	}
 	
 	public void insertAtEnd(int data) {
@@ -39,10 +38,10 @@ public class LinkedList {
 	 
 	 //delete at first
 		public void pop() {
-		Node toDelete = head;
-		head = head.next;
-		toDelete = null;
-	}
+			Node toDelete = head;
+			head = head.next;
+			toDelete = null;
+			}
 	
 	public void popLast() {
 		Node temp = head;
@@ -70,10 +69,14 @@ public class LinkedList {
             }  
         }  
         if(flag == true)  
-             System.out.println("Element:" + data + " is present at the position " + count);  
+        {
+             System.out.println("Element:" + data + " is present at the position " + count); 
+        }
         else  
+        {
              System.out.println("Element is not present in the list");  
-    }  
+        }
+	}
 	
 	public void display() {
 		Node temp = head;
@@ -82,6 +85,4 @@ public class LinkedList {
 			temp = temp.next;
 		}
 	}
-
-	
 }
