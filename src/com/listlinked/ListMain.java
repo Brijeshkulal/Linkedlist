@@ -20,5 +20,9 @@ public class ListMain {
 		Node newNode = new Node(40);
 		linkedList.searchNode(30, newNode);
 		linkedList.display();
+		
+		System.out.println("The deleted element is: 40");
+		linkedList.deleteSearchNode(40);
+		linkedList.display();
 		}
 }
